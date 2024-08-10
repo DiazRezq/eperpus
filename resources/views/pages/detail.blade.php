@@ -49,7 +49,7 @@
                     data-aos="zoom-in"
                     data-aos-delay="100"
                   >
-                    <a href="{{ route('detail') }}" @click="changeActive(index)">
+                    <a href="#" @click="changeActive(index)">
                       <img
                         :src="photo.url"
                         class="w-100 thumbnail-image"

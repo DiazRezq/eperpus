@@ -28,7 +28,7 @@
                 />
               </div>
               <p class="categories-text">
-                Gadgets
+                Fiction
               </p>
             </a>
           </div>
@@ -46,7 +46,7 @@
                 />
               </div>
               <p class="categories-text">
-                Furniture
+                Poem
               </p>
             </a>
           </div>
@@ -64,7 +64,7 @@
                 />
               </div>
               <p class="categories-text">
-                Makeup
+                Beauty
               </p>
             </a>
           </div>
@@ -82,7 +82,7 @@
                 />
               </div>
               <p class="categories-text">
-                Sneaker
+                Bussiness
               </p>
             </a>
           </div>
@@ -100,7 +100,7 @@
                 />
               </div>
               <p class="categories-text">
-                Tools
+                Manga
               </p>
             </a>
           </div>
@@ -118,7 +118,7 @@
                 />
               </div>
               <p class="categories-text">
-                Baby
+                Parenting
               </p>
             </a>
           </div>
@@ -129,7 +129,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12" data-aos="fade-up">
-            <h5>All Products</h5>
+            <h5>New Products</h5>
           </div>
         </div>
         <div class="row">
@@ -142,17 +142,11 @@
               <div class="products-thumbnail">
                 <div
                   class="products-image"
-                  style="
-                    background-image: url('/images/products-apple-watch.jpg');
-                  "
+                  style="background-image: url('/images/moredays.png')"
                 ></div>
               </div>
-              <div class="products-text">
-                Apple Watch 4
-              </div>
-              <div class="products-price">
-                $890
-              </div>
+              <div class="products-text">More days at Morisaki</div>
+              <div class="products-price">$890</div>
             </a>
           </div>
           <div
@@ -164,17 +158,11 @@
               <div class="products-thumbnail">
                 <div
                   class="products-image"
-                  style="
-                    background-image: url('/images/products-orange-bogotta.jpg');
-                  "
+                  style="background-image: url('/images/pattern.png')"
                 ></div>
               </div>
-              <div class="products-text">
-                Orange Bogotta
-              </div>
-              <div class="products-price">
-                $94,509
-              </div>
+              <div class="products-text">Pattern Breaker</div>
+              <div class="products-price">$94,509</div>
             </a>
           </div>
           <div
@@ -186,17 +174,11 @@
               <div class="products-thumbnail">
                 <div
                   class="products-image"
-                  style="
-                    background-image: url('/images/products-sofa-ternyaman.jpg');
-                  "
+                  style="background-image: url('/images/dracula.png')"
                 ></div>
               </div>
-              <div class="products-text">
-                Sofa Ternyaman
-              </div>
-              <div class="products-price">
-                $1,409
-              </div>
+              <div class="products-text">Dracula</div>
+              <div class="products-price">$1,409</div>
             </a>
           </div>
           <div
@@ -208,17 +190,11 @@
               <div class="products-thumbnail">
                 <div
                   class="products-image"
-                  style="
-                    background-image: url('/images/products-bubuk-maketti.jpg');
-                  "
+                  style="background-image: url('/images/grit.png')"
                 ></div>
               </div>
-              <div class="products-text">
-                Bubuk Maketti
-              </div>
-              <div class="products-price">
-                $225
-              </div>
+              <div class="products-text">Grit</div>
+              <div class="products-price">$225</div>
             </a>
           </div>
           <div
@@ -230,17 +206,11 @@
               <div class="products-thumbnail">
                 <div
                   class="products-image"
-                  style="
-                    background-image: url('/images/products-tatakan-gelas.jpg');
-                  "
+                  style="background-image: url('/images/dune.png')"
                 ></div>
               </div>
-              <div class="products-text">
-                Tatakan Gelas
-              </div>
-              <div class="products-price">
-                $45,184
-              </div>
+              <div class="products-text">Dune</div>
+              <div class="products-price">$45,184</div>
             </a>
           </div>
           <div
@@ -252,17 +222,11 @@
               <div class="products-thumbnail">
                 <div
                   class="products-image"
-                  style="
-                    background-image: url('/images/products-mavic-kawe.jpg');
-                  "
+                  style="background-image: url('/images/art.png')"
                 ></div>
               </div>
-              <div class="products-text">
-                Mavic Kawe
-              </div>
-              <div class="products-price">
-                $503
-              </div>
+              <div class="products-text">Art of War</div>
+              <div class="products-price">$503</div>
             </a>
           </div>
           <div
@@ -274,17 +238,11 @@
               <div class="products-thumbnail">
                 <div
                   class="products-image"
-                  style="
-                    background-image: url('/images/products-black-edition-nike.jpg');
-                  "
+                  style="background-image: url('/images/youdoyou.png')"
                 ></div>
               </div>
-              <div class="products-text">
-                Black Edition Nike
-              </div>
-              <div class="products-price">
-                $70,482
-              </div>
+              <div class="products-text">youdoyou</div>
+              <div class="products-price">$70,482</div>
             </a>
           </div>
           <div
@@ -296,17 +254,11 @@
               <div class="products-thumbnail">
                 <div
                   class="products-image"
-                  style="
-                    background-image: url('/images/products-monkey-toys.jpg');
-                  "
+                  style="background-image: url('/images/kretek.jpg')"
                 ></div>
               </div>
-              <div class="products-text">
-                Monkey Toys
-              </div>
-              <div class="products-price">
-                $783
-              </div>
+              <div class="products-text">Gadis Kretek</div>
+              <div class="products-price">$783</div>
             </a>
           </div>
         </div>

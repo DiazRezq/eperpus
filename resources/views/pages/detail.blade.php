@@ -68,8 +68,8 @@
             <div class="container">
               <div class="row">
                 <div class="col-lg-8">
-                  <h1>Sofa Ternyaman</h1>
-                  <div class="owner">By Galih Pratama</div>
+                  <h1>Days at morisaki bookshop</h1>
+                  <div class="owner">Satoshi Yagisawa</div>
                   <div class="price">$1,409</div>
                 </div>
                 <div class="col-lg-2" data-aos="zoom-in">
@@ -87,18 +87,10 @@
               <div class="row">
                 <div class="col-12 col-lg-8">
                   <p>
-                    The Nike Air Max 720 SE goes bigger than ever before with
-                    Nike's tallest Air unit yet for unimaginable, all-day comfort.
-                    There's super breathable fabrics on the upper, while colours
-                    add a modern edge.
+                    Satoshi Yagisawa was born in Chiba, Japan, in 1977. He is the international bestselling author of Days at the Morisaki Bookshop, his debut novel, which was originally published in 2009 and won the Chiyoda Literature Prize. More Days at the Morisaki Bookshop is the sequel.
                   </p>
                   <p>
-                    Bring the past into the future with the Nike Air Max 2090, a
-                    bold look inspired by the DNA of the iconic Air Max 90.
-                    Brand-new Nike Air cushioning underfoot adds unparalleled
-                    comfort while transparent mesh and vibrantly coloured details
-                    on the upper are blended with timeless OG features for an
-                    edgy, modernised look.
+                    In this charming and emotionally resonant follow up to the internationally bestselling Days at the Morisaki Bookshop, Satoshi Yagisawa paints a poignant and thoughtful portrait of life, love, and how much books and bookstores mean to the people who love them.Set again in the beloved Japanese bookshop and nearby coffee shop in the Jimbochi neighborhood of Toyko, More Days at the Morisaki
                   </p>
                 </div>
               </div>
@@ -122,9 +114,7 @@
                       />
                       <div class="media-body">
                         <h5 class="mt-2 mb-1">Hazza Risky</h5>
-                        I thought it was not good for living room. I really happy
-                        to decided buy this product last week now feels like
-                        homey.
+                        A beautifully written book. It makes you realize that rather than running away from problems, one should tackle them head on.The character growth throughout the novel is fascinating, as each individual's perception of others changes over time. This reflects the very human tendency to judge based on limited information, it highlights how easily we misinterpret each other and most importantly how a break can heal so many things.
                       </div>
                     </li>
                     <li class="media my-4">
@@ -135,9 +125,7 @@
                       />
                       <div class="media-body">
                         <h5 class="mt-2 mb-1">Anna Sukkirata</h5>
-                        Color is great with the minimalist concept. Even I thought
-                        it was made by Cactus industry. I do really satisfied with
-                        this.
+                        The story is written from the perspective of the leading female character by a male author, and the journey from struggles to acceptance is beautifully captured. When you focus on the problems, you see everyone and everything as exhausting and challenging to deal with
                       </div>
                     </li>
                     <li class="media">
@@ -148,9 +136,7 @@
                       />
                       <div class="media-body">
                         <h5 class="mt-2 mb-1">Dakimu Wangi</h5>
-                        When I saw at first, it was really awesome to have with.
-                        Just let me know if there is another upcoming product like
-                        this.
+                       The author's words are like a warm breeze, making every page a pleasure to read. I particularly loved how they described the Morisaki Bookshop – it felt like stepping into a cozy haven for book lovers.
                       </div>
                     </li>
                   </ul>
@@ -171,7 +157,7 @@
       AOS.init();
     },
     data: {
-      activePhoto: 3,
+      activePhoto:3,
       photos: [
         {
           id: 1,
@@ -187,7 +173,7 @@
         },
         {
           id: 4,
-          // url: "/images/product-details-4.jpg",
+          url: "/images/morisaki3.jpg",
         },
       ],
     },

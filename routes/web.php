@@ -20,3 +20,4 @@ Route::get('/success', [CartController::class, 'success'])->name('success');
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('register/success', [App\Http\Controllers\Auth\RegisterController::class, 'success'])->name('register-success');
+Route::get('register', [App\Http\Controllers\Auth\RegisterController::class, 'register'])->name('register');

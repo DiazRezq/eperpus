@@ -73,8 +73,8 @@ class RegisterController extends Controller
         return view('auth.success');
     }
 
-    public function register()
+    public function login()
     {
-        return view('auth.register');
+        return view('auth.login');
     }
 }

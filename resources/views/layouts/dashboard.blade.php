@@ -33,7 +33,7 @@
               Dashboard
             </a>
             <a
-              href="{{ route('dashboard-products') }}"
+              href="{{ route('dashboard-products-details') }}"
               class="list-group-item list-group-item-action"
             >
               My Products

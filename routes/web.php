@@ -3,6 +3,8 @@
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\DashboardProductController;
 use App\Http\Controllers\DetailController;
 use Illuminate\Container\Attributes\Auth;
 use Illuminate\Support\Facades\Route;
@@ -23,3 +25,6 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('register/success', [App\Http\Controllers\Auth\RegisterController::class, 'success'])->name('register-success');
 Route::get('register', [App\Http\Controllers\Auth\RegisterController::class, 'register'])->name('register');
 Route::get('/login', [RegisterController::class, 'login'])->name('login');
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+Route::get('/dashboard/products', [DashboardProductController::class, 'index'])->name('dashboard-products');
+Route::get('/dashboard/products/{id?}', [DashboardProductController::class, 'details'])->name('dashboard-products-details');

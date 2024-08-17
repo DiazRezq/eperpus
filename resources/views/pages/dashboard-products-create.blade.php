@@ -53,12 +53,12 @@ data-aos="fade-up"
                   <div class="form-group">
                     <label for="description">Description</label>
                     <textarea
-                      name="descrioption"
-                      id=""
+                      name="description"
+                      id="editor"
                       cols="30"
                       rows="4"
                       class="form-control"
-                    >The Nike Air Max 720 SE goes bigger than ever before with Nike's tallest Air unit yet for unimaginable, all-day comfort. There's super breathable fabrics on the upper, while colours add a modern edge. Bring the past into the future with the Nike Air Max 2090, a bold look inspired by the DNA of the iconic Air Max 90. Brand-new Nike Air cushioning
+                    >
                     </textarea>
                   </div>
                 </div>
@@ -97,13 +97,12 @@ data-aos="fade-up"
   </div>
 </div>
 </div>
-           
-          
+             
 @endsection
 
 @push('addon-script')
-<script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
-<script>
-  CKEDITOR.replace("editor");
-</script>
+<script src="//cdn.ckeditor.com/4.24.0-lts/basic/ckeditor.js"></script>
+  <script>
+    CKEDITOR.replace("editor");
+  </script>
 @endpush

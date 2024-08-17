@@ -14,7 +14,7 @@
     @stack('prepend-style')
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link href="/style/main.css" rel="stylesheet" />
-    @stack('addon-style')
+    
   </head>
 
   <body>
@@ -39,19 +39,13 @@
               My Products
             </a>
             <a
-              href="/dashboard-transactions.html"
+              href="{{ route('dashboard-transactions') }}"
               class="list-group-item list-group-item-action"
             >
               Transactions
             </a>
             <a
-              href="/dashboard-settings.html"
-              class="list-group-item list-group-item-action"
-            >
-              Store Settings
-            </a>
-            <a
-              href="/dashboard-account.html"
+              href="{{ route('dashboard-account') }}"
               class="list-group-item list-group-item-action"
             >
               My Account

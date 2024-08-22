@@ -16,6 +16,8 @@ return new class extends Migration
             $table->integer('users_id');
             $table->integer('rent_price');
             $table->integer('memberships_fee');
+            $table->integer('code');
+            $table->string('status');
             $table->timestamps();
         });
     }

@@ -25,8 +25,6 @@ return new class extends Migration
             $table->integer('stock');
             $table->integer('rental_price');
             $table->timestamps();
-            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
-            $table->foreign('publisher_id')->references('id')->on('publishers')->onDelete('cascade');
             $table->softDeletes();
             $table->engine('innoDB');
         });

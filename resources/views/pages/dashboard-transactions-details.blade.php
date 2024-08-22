@@ -32,18 +32,18 @@ data-aos="fade-up"
               <div class="col-12 col-md-8">
                 <div class="row">
                   <div class="col-12 col-md-6">
-                    <div class="product-title">Customer Name</div>
-                    <div class="product-subtitle">Angga Risky</div>
+                    <div class="product-title">Writer Name</div>
+                    <div class="product-subtitle">Diaz</div>
                   </div>
                   <div class="col-12 col-md-6">
-                    <div class="product-title">Product Name</div>
+                    <div class="product-title">Book Title</div>
                     <div class="product-subtitle">
-                      Shirup Marzzan
+                      The People's Book
                     </div>
                   </div>
                   <div class="col-12 col-md-6">
                     <div class="product-title">
-                      Date of Transaction
+                      Date Draft Send
                     </div>
                     <div class="product-subtitle">
                       12 Januari, 2020
@@ -51,13 +51,9 @@ data-aos="fade-up"
                   </div>
                   <div class="col-12 col-md-6">
                     <div class="product-title">Status</div>
-                    <div class="product-subtitle text-danger" id="transactionDetails">
-                      {{ status }}
+                    <div class="product-subtitle text-danger" id="publishDetails">
+                    Pending
                     </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="product-title">Total Amount</div>
-                    <div class="product-subtitle">$280,409</div>
                   </div>
                   <div class="col-12 col-md-6">
                     <div class="product-title">Mobile</div>
@@ -71,45 +67,9 @@ data-aos="fade-up"
             <div class="row">
               <div class="col-12 mt-4">
                 <h5>
-                  Shipping Informations
+                  Publish Informations
                 </h5>
                 <div class="row">
-                  <div class="col-12 col-md-6">
-                    <div class="product-title">Address 1</div>
-                    <div class="product-subtitle">
-                      Setra Duta Cemara
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="product-title">Address 2</div>
-                    <div class="product-subtitle">
-                      Blok B2 No. 34
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="product-title">
-                      Province
-                    </div>
-                    <div class="product-subtitle">
-                      West Java
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="product-title">City</div>
-                    <div class="product-subtitle">
-                      Bandung
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="product-title">Postal Code</div>
-                    <div class="product-subtitle">123999</div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="product-title">Country</div>
-                    <div class="product-subtitle">
-                      Indonesia
-                    </div>
-                  </div>
                   <div class="col-12">
                     <div class="row">
                       <div class="col-md-3">
@@ -120,10 +80,9 @@ data-aos="fade-up"
                           class="form-control"
                           v-model="status"
                         >
-                          <option value="UNPAID">Unpaid</option>
-                          <option value="PENDING">Pending</option>
-                          <option value="SHIPPING">Shipping</option>
-                          <option value="SUCCESS">Success</option>
+                          <option value="Draft">Draft</option>
+                          <option value="Reviewed">in review</option>
+                          <option value="Publised">Published</option>
                         </select>
                       </div>
                       <template v-if="status == 'SHIPPING'">
@@ -165,11 +124,10 @@ data-aos="fade-up"
 @push('addon-script')
 <script src="/vendor/vue/vue.js"></script>
 <script>
-  var transactionDetails = new Vue({
-    el: "#transactionDetails",
+  var publishStatus = new Vue({
+    el: "#publishDetails",
     data: {
       status: "Published",
-      resi: "BDO12308012132",
     },
   });
 </script>

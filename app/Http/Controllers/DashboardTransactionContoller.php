@@ -14,4 +14,10 @@ class DashboardTransactionContoller extends Controller
     {
         return view('pages.dashboard-transactions-details');
     }
+
+    public function publishDetails()
+    {
+        $status = 'Published'; // Or whatever the actual status is
+        return view('transaction-details', compact('status'));
+    }
 }

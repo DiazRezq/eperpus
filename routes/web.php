@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminDashboardController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\CategoryController;
@@ -34,3 +35,7 @@ Route::get('/dashboard/products/{id?}', [DashboardProductController::class, 'det
 Route::get('/dashboard/transactions', [DashboardTransactionContoller::class, 'index'])->name('dashboard-transactions');
 Route::get('/dashboard/transactions/{id?}', [DashboardTransactionContoller::class, 'details'])->name('dashboard-transactions-details');
 Route::get('/dashboard/account', [DashboardSettingController::class, 'account'])->name('dashboard-account');
+Route::get('/admin', [AdminDashboardController::class, 'index'])->name('admin');
+
+
+    // ->middleware('auth', 'admin');

@@ -38,7 +38,6 @@
                         <tr>
                             <th>#</th>
                             <th>Title</th>
-                            <th>user</th>
                             <th>ISBN</th>
                             <th>Author</th>
                             <th>Published Year</th>
@@ -50,6 +49,31 @@
                             <th>Price</th>
                         </tr>
                     </thead>
+                    <tbody>
+                        @foreach ($books as $book)
+                        <tr>
+                            <td>{{ $book->id }}</td>
+                            <td>{{ $book->title }}</td>
+                            <td>{{ $book->isbn }}</td>
+                            <td>{{ $book->author }}</td>
+                            <td>{{ $book->published_year }}</td>
+                            <td>{{ $book->category }}</td>
+                            <td>{{ $book->publisher }}</td>
+                            <td>{{ $book->cover_image }}</td>
+                            <td>{{ $book->description }}</td>
+                            <td>{{ $book->stock }}</td>
+                            <td>{{ $book->price }}</td>
+                            <td>
+                                <a href="{{ route('edit-book', $book->id) }}" class="btn btn-warning">Edit</a>
+                                <form action="{{ route('books.destroy', $book->id) }}" method="POST" style="display: :inline">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                </form>
+                            </td>
+                        </tr>
+                        @endforeach
+                    </tbody>
                 </table>
             </div>
         </div>

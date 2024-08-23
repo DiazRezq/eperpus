@@ -1,122 +1,83 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="/" class="brand-link">
-        <img src="{{ asset('AdminLTE-3.2.0/dist/img/AdminLTELogo.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-        <span class="brand-text font-weight-light">e-Library</span>
+    <a href="/" class="brand-link"><img src="{{ asset('AdminLTE-3.2.0/dist/img/AdminLTELogo.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+        <span class="brand-text font-weight-light">AdminLTE 3</span>
     </a>
 
     <!-- Sidebar -->
     <div class="sidebar">
-        <!-- Sidebar user panel (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
                 <img src="{{ asset('AdminLTE-3.2.0/dist/img/user2-160x160.jpg') }}" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-                <a href="#" class="d-block">Name</a>
+                <a href="#" class="d-block">Alexander Pierce</a>
             </div>
         </div>
-
-        <!-- Sidebar Menu -->
+     {{-- sidebar menu --}}
         <nav class="mt-2">
-            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
-                data-accordion="false">
-
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <li class="nav-item">
-                    <a href="{{ route('dashboard') }}" class="nav-link {{ request()->routeIs('dashboard') ? 'active' : '' }}">
-                        <i class="nav-icon fas fa-tachometer-alt"></i>
-                        <p>
-                            Dashboard
-                        </p>
+                    <a href="{{ route('dashboard-admin') }}" class="nav-link">
+                    <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <p>Dashboard</p>
                     </a>
                 </li>
-
-                {{-- Roles --}}
-                <li class="nav-header">Peran</li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="nav-icon fas fa-user-friends"></i>
-                            <p>
-                                Pengguna
-                            </p>
-                        </a>
-                    </li>
+                {{-- roles --}}
+                <li class="nav-header">Role</li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link ">
-                        <i class="nav-icon fas fa-users"></i>
-                        <p>
-                            Anggota
-                        </p>
-                    </a>
-                </li>
-
-                {{-- Management --}}
-                <li class="nav-header">Manajemen</li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-book"></i>
-                        <p>
-                            Buku
-                        </p>
+                    <a href="" class="nav-link">
+                    <i class="nav-icon fas fa-user-friends"></i>
+                        <p>User</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-list"></i>
-                        <p>
-                            Kategori
-                        </p>
+                    <a href="" class="nav-link">
+                    <i class="nav-icon fas fa-users"></i>
+                    <p>Members</p>
+                    </a>
+                </li>
+                {{-- management --}}
+                <li class="nav-header">Management</li>
+                <li class="nav-item">
+                    <a href="{{ route('dashboard-admin-books') }}" class="nav-link">
+                    <i class="nav-icon fas fa-book"></i>
+                    <p>Books</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-print"></i>
-                        <p>
-                            Penerbit
-                        </p>
+                    <a href="" class="nav-link">
+                    <i class="nav-icon fas fa-list"></i>
+                    <p>Category</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{ route('borrowings.index') }}" class="nav-link {{ request()->routeIs('borrowings.*') ? 'active' : '' }}">
-                        <i class="nav-icon fas fa-file"></i>
-                        <p>
-                            Penyewaan
-                        </p>
-                    </a>
-                </li>
-
-                {{-- Sample pages --}}
-                <li class="nav-header">Halaman Contoh</li>
-                <li class="nav-item">
-                    <a href="{{ route('samples.datepicker') }}" class="nav-link {{ request()->routeIs('samples.datepicker') ? 'active' : '' }}">
-                        <i class="nav-icon fas fa-calendar"></i>
-                        <p>
-                            Date Picker
-                        </p>
-                    </a>
-                </li>
-                
-                {{-- Settings --}}
-                <li class="nav-header">Pengaturan</li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-users-cog"></i>
-                        <p>
-                            Akun
-                        </p>
+                    <a href="" class="nav-link">
+                    <i class="nav-icon fas fa-print"></i>
+                    <p>Publisher</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-cog"></i>
-                        <p>
-                            Aplikasi
-                        </p>
+                    <a href="" class="nav-link">
+                    <i class="nav-icon fas fa-file"></i>
+                    <p>Borrow</p>
+                    </a>
+                </li>
+                {{-- setting --}}
+                <li class="nav-header">Setting</li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">
+                    <i class="nav-icon fas fa-users-cog"></i>
+                    <p>Account</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">
+                    <i class="nav-icon fas fa-cog"></i>
+                    <p>Setting</p>
                     </a>
                 </li>
             </ul>
-        </nav>
-        <!-- /.sidebar-menu -->
+        </nav>        
     </div>
-    <!-- /.sidebar -->
 </aside>

@@ -1,9 +1,11 @@
 <?php
 
-use App\Http\Controllers\AdminDashboardController;
+
 use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\BookAdminController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\DashboardAdminController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DashboardProductController;
 use App\Http\Controllers\DashboardSettingController;
@@ -35,7 +37,8 @@ Route::get('/dashboard/products/{id?}', [DashboardProductController::class, 'det
 Route::get('/dashboard/transactions', [DashboardTransactionContoller::class, 'index'])->name('dashboard-transactions');
 Route::get('/dashboard/transactions/{id?}', [DashboardTransactionContoller::class, 'details'])->name('dashboard-transactions-details');
 Route::get('/dashboard/account', [DashboardSettingController::class, 'account'])->name('dashboard-account');
-Route::get('/admin', [AdminDashboardController::class, 'index'])->name('admin');
+Route::get('/admin', [DashboardAdminController::class, 'index'])->name('dashboard-admin');
+Route::get('/booksadmin', [BookAdminController::class, 'index'])->name('dashboard-admin-books');
 
 
     // ->middleware('auth', 'admin');
